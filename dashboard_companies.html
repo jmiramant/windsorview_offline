@@ -1,0 +1,682 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>Windsor View</title>
+  <meta name="description" content="Landing page for Windsor View. Changing how you see email.">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700|Bree+Serif|Muli" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/plugins.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modern.css">
+  <link rel="stylesheet" href="styles/css/lib/themes.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nv.d3.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="scripts/lib/vendor/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="scripts/lib/vendor/datatables/examples/resources/bootstrap/3/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="scripts/lib/vendor/datatables/media/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="scripts/lib/vendor/datatables-tabletools/css/dataTables.tableTools.css">
+<body>
+  <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
+    <div id="error-msg"></div>
+    <div id="main-container"><div><div id="header-region"><header class="navbar navbar-default"><ul class="nav navbar-nav-custom">
+  <li>
+    <a id="toggle-sidebar" href="#">
+      <i class="fa fa-bars fa-fw"></i>
+    </a>
+  </li>
+</ul>
+
+<ul class="nav navbar-nav-custom pull-right">
+  <li id="logout">
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Logout"><strong>Logout &nbsp;</strong><i class="gi gi-exit"></i></a>
+  </li>
+</ul>
+</header></div>
+<div id="tables-region" style="min-height: 460px;"><div id="company-layout"> <div id="page-content">
+  <!-- Contacts Header -->
+  <div class="content-header">
+    <div class="header-section">
+      <h1>
+        <i class="fa fa-bar-chart-o"></i>Dashboard<br>
+      </h1>
+    </div>
+  </div>
+
+  <div class="block full" role="tabpanel">
+    <!-- Block Tabs Title -->
+    <div class="block-title">
+      <ul class="nav nav-tabs" role="tablist" data-toggle="tabs">
+        <li role="presentation"><a href="./dashboard_home.html" aria-controls="graph-tab" role="tab" data-toggle="tab">Graphs</a></li>
+        <li role="presentation"><a href="./dashboard_response.html" aria-controls="response-tab" role="tab" data-toggle="tab">Response Times</a></li>
+        <li role="presentation" class="active"><a href="./dashboard_companies.html" aria-controls="company-tab" role="tab" data-toggle="tab">Favorited Companies</a></li>
+      </ul>
+      <div class="pull-right fresh-data">Data Last Updated: Feb 17th, 2015</div>
+    </div>
+    <!-- END Block Tabs Title -->
+
+    <!-- Tabs Content -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane" id="graph-tab"><div id="engage-list"><div class="block">
+  <div class="block-title">
+    <h2>Email Activity for your Favorited Companies </h2>
+
+    <div class="block-options pull-right range-container favorited">
+      <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="timelineWeek">1 Week</a>
+      <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default active" data-range="timelineMonth">1 Month</a>
+      <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="timelineThreeMonth">3 Months</a>
+      <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="timelineSixMonth">6 Months</a>
+    </div>
+
+  </div>
+
+  <p>The graph below shows email activity across all of your colleagues with your favorited companies for the specified time periods.</p>
+  <div id="chart" style="width:100%;margin:0 auto;">
+    <svg style="height:300px; width:100%;margin:0 auto;"><g class="nvd3 nv-wrap nv-multiBarHorizontalChart" transform="translate(175,30)"><g><g class="nv-x nv-axis"><g class="nvd3 nv-wrap nv-axis"><g><g class="tick" transform="translate(0,13.296703296703297)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="-0.18em">Bull City Venture</tspan><tspan x="-2" dy="0.8200000000000001em">Partners</tspan></text></g><g class="tick" transform="translate(0,37.472527472527474)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">Bench</tspan></text></g><g class="tick" transform="translate(0,61.64835164835165)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">Benhatten.com</tspan></text></g><g class="tick" transform="translate(0,85.82417582417582)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">Bgrdc.com</tspan></text></g><g class="tick" transform="translate(0,110)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">Bgrpr.com</tspan></text></g><g class="tick" transform="translate(0,134.17582417582418)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">COMPTEL</tspan></text></g><g class="tick" transform="translate(0,158.35164835164835)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">Davidvitter.com</tspan></text></g><g class="tick" transform="translate(0,182.52747252747253)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">Dun &amp; Bradstreet</tspan></text></g><g class="tick" transform="translate(0,206.7032967032967)" style="opacity: 1;"><line x2="921" y2="0"></line><text x="-5" dy=".32em" y="0" style="text-anchor: end;"><tspan x="-2" dy="0.32em">EasyPaint</tspan></text></g><path class="domain" d="M0,0H0V220H0"></path><text class="nv-axislabel" transform="rotate(-90)" y="-63" x="-1.208791208791209" style="text-anchor: middle;"></text></g></g></g><g class="nv-y nv-axis" transform="translate(0,220)"><g class="nv-zeroLine"><line x1="318.8076923076923" x2="318.8076923076923" y1="0" y2="-220"></line></g><g class="nvd3 nv-wrap nv-axis"><g><g class="tick" transform="translate(35.42307692307693,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">8</tspan></text></g><g class="tick" transform="translate(106.26923076923077,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">6</tspan></text></g><g class="tick" transform="translate(177.1153846153846,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">4</tspan></text></g><g class="tick" transform="translate(247.9615384615385,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">2</tspan></text></g><g class="tick" transform="translate(318.8076923076923,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">0</tspan></text></g><g class="tick" transform="translate(389.6538461538462,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">2</tspan></text></g><g class="tick" transform="translate(460.5,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">4</tspan></text></g><g class="tick" transform="translate(531.3461538461539,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">6</tspan></text></g><g class="tick" transform="translate(602.1923076923077,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">8</tspan></text></g><g class="tick" transform="translate(673.0384615384615,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">10</tspan></text></g><g class="tick" transform="translate(743.8846153846154,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">12</tspan></text></g><g class="tick" transform="translate(814.7307692307693,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">14</tspan></text></g><g class="tick" transform="translate(885.5769230769231,0)" style="opacity: 1;"><line y2="-220" x2="0"></line><text y="3" dy=".71em" x="0" style="text-anchor: middle;"><tspan x="-2" y="3" dy="0.71em">16</tspan></text></g><path class="domain" d="M0,0V0H921V0"></path><text class="nv-axislabel" text-anchor="middle" y="36" x="460.5">Email Count</text></g><g class="nv-axisMaxMin" transform="translate(0,0)"><text dy=".71em" y="3" transform="rotate(0 0,0)" style="text-anchor: middle;">9</text></g><g class="nv-axisMaxMin" transform="translate(921,0)"><text dy=".71em" y="3" transform="rotate(0 0,0)" style="text-anchor: middle;">17</text></g></g></g><g class="nv-barsWrap"><g class="nvd3 nv-wrap nv-multibarHorizontal" transform="translate(0,0)"><defs></defs><g><g class="nv-groups"><g class="nv-group nv-series-0" style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(222, 91, 92); stroke: rgb(222, 91, 92);"><g transform="translate(177.11538696289062,2.4175822734832764)" class="nv-bar negative"><rect width="141.6923076923077" height="21.75824175824176"></rect><text></text></g><g transform="translate(106.26923370361328,26.593406677246094)" class="nv-bar negative"><rect width="212.53846153846155" height="21.75824175824176"></rect><text></text></g><g transform="translate(0,50.769229888916016)" class="nv-bar negative"><rect width="318.8076923076923" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,74.94505310058594)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,99.12088012695312)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,123.29670715332031)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(106.26923370361328,147.4725341796875)" class="nv-bar negative"><rect width="212.53846153846155" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,171.64834594726562)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(70.84615325927734,195.8241729736328)" class="nv-bar negative"><rect width="247.96153846153845" height="21.75824175824176"></rect><text></text></g></g><g class="nv-group nv-series-1" style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(80, 146, 192); stroke: rgb(80, 146, 192);"><g transform="translate(318.80767822265625,2.4175822734832764)" class="nv-bar positive"><rect width="141.6923076923077" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,26.593406677246094)" class="nv-bar positive"><rect width="354.2307692307692" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,50.769229888916016)" class="nv-bar positive"><rect width="602.1923076923077" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,74.94505310058594)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,99.12088012695312)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,123.29670715332031)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,147.4725341796875)" class="nv-bar positive"><rect width="70.84615384615384" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,171.64834594726562)" class="nv-bar positive"><rect width="0" height="21.75824175824176"></rect><text></text></g><g transform="translate(318.80767822265625,195.8241729736328)" class="nv-bar positive"><rect width="247.96153846153845" height="21.75824175824176"></rect><text></text></g></g></g></g></g></g><g class="nv-legendWrap" transform="translate(0,-30)"><g class="nvd3 nv-legend" transform="translate(0,5)"><g transform="translate(709,5)"><g class="nv-series" transform="translate(0,5)"><circle class="nv-legend-symbol" r="5" style="stroke-width: 2px; fill: rgb(222, 91, 92); stroke: rgb(222, 91, 92);"></circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8">Sent Emails</text></g><g class="nv-series" transform="translate(94,5)"><circle class="nv-legend-symbol" r="5" style="stroke-width: 2px; fill: rgb(80, 146, 192); stroke: rgb(80, 146, 192);"></circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8">Received Emails</text></g></g></g></g><g class="nv-controlsWrap"></g></g></g></svg>
+  </div>
+
+</div>
+<div class="block">
+  <div class="block-title">
+    <h2>Colleagues Who Engaged With Your Favorited Companies This Week</h2>
+
+      <div class="block-options pull-right range-container engaged">
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="oneWeek">1 Week</a>
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default active" data-range="oneMonth">1 Month</a>
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="threeMonth">3 Months</a>
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="sixMonth">6 Months</a>
+      </div>
+
+  </div>
+  <div class="table-responsive">
+
+      <table id="responses-general-table" class="table table-striped table-vcenter table-condensed table-hover">
+        <caption style="caption-side:bottom; text-align:center;">
+          <hr>
+          <h4>Legend
+          </h4>
+          <span class="label" style="background-color:#DE5B5C;">Only Sent Emails</span>
+          <span class="label" style="background-color:#5092C0;">Only Received Emails</span>
+          <span class="label" style="background-color:#907993;">Both Sent and Received Emails</span>
+          <hr>
+        </caption>
+        <thead>
+          <tr>
+            <th style="text-align:center;">
+            </th>
+            <th style="text-align:left;">Colleagues
+            </th>
+          </tr>
+          <style> .label.sent{background-color:#DE5B5C;} .label.rec{background-color:#5092C0;} .label.sentrec{background-color:#907993;}
+          </style>
+        </thead>
+        <tbody id="engage-container"><tr>
+  <td>Bull City Venture Partners
+  </td>
+  <td style="text-align: left;" class="colleague-container">
+
+
+        <a href="#/user/benwindsorviewcom"><span class="label sentrec">Ben Hatten</span></a>
+
+
+    <span class="ellipsis" style="display:none;">Show All...</span>
+  </td>
+</tr><tr>
+  <td>Bench
+  </td>
+  <td style="text-align: left;" class="colleague-container">
+
+
+        <a href="#/user/benwindsorviewcom"><span class="label sentrec">Ben Hatten</span></a>
+
+
+    <span class="ellipsis" style="display:none;">Show All...</span>
+  </td>
+</tr><tr>
+  <td>Benhatten.com
+  </td>
+  <td style="text-align: left;" class="colleague-container">
+
+
+        <a href="#/user/seanwindsorviewcom"><span class="label sentrec">Sean Murphy</span></a>
+
+
+
+        <a href="#/user/benwindsorviewcom"><span class="label rec">Ben Hatten</span></a>
+
+
+    <span class="ellipsis" style="display:none;">Show All...</span>
+  </td>
+</tr><tr>
+  <td>Davidvitter.com
+  </td>
+  <td style="text-align: left;" class="colleague-container">
+
+
+        <a href="#/user/benwindsorviewcom"><span class="label sentrec">Ben Hatten</span></a>
+
+
+    <span class="ellipsis" style="display:none;">Show All...</span>
+  </td>
+</tr><tr>
+  <td>EasyPaint
+  </td>
+  <td style="text-align: left;" class="colleague-container">
+
+
+        <a href="#/user/benwindsorviewcom"><span class="label sentrec">Ben Hatten</span></a>
+
+
+    <span class="ellipsis" style="display:none;">Show All...</span>
+  </td>
+</tr></tbody>
+      </table>
+
+  </div>
+</div>
+</div></div>
+      <div role="tabpanel" class="tab-pane" id="response-tab"><div id="response-list"><div class="block">
+  <!-- Contacts Title -->
+  <div class="block-title">
+    <div class="block-options">
+      <h2>Cohort Analysis of All Favorited Companies</h2>
+
+      <div class="block-options pull-right response-rollup">
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="oneWeek">1 Week</a>
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default active" data-range="oneMonth">1 Month</a>
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="threeMonth">3 Months</a>
+        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="sixMonth">6 Months</a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+        <div class="row text-center model-response">
+          <div class="col-xs-3">
+            <a href="javascript:void(0)" class="widget-icon">
+              <i class="fa fa-clock-o fa-4x" style="color:#DE5B5C;"></i>
+            </a>
+            <h3 class="remove-margin-bottom"><strong>2 days</strong><br><small>Windsor View Avg Response Time</small></h3>
+          </div>
+          <div class="col-xs-3">
+            <a href="javascript:void(0)" class="widget-icon">
+              <i class="fa fa-clock-o fa-4x" style="color:#5092C0;"></i>
+            </a>
+            <h3 class="remove-margin-bottom"><strong>20 hours</strong><br><small>Favorited Companies Avg Response Time</small></h3>
+          </div>
+          <div class="col-xs-3">
+            <a href="javascript:void(0)" class="widget-icon">
+              <i class="fa fa-exchange fa-4x" style="color:#DE5B5C;"></i>
+            </a>
+            <h3 class="remove-margin-bottom"><strong>68%</strong><br><small>Windsor View Avg Response Rate</small></h3>
+          </div>
+          <div class="col-xs-3">
+            <a href="javascript:void(0)" class="widget-icon">
+              <i class="fa fa-exchange fa-4x" style="color:#5092C0;"></i>
+            </a>
+            <h3 class="remove-margin-bottom"><strong>79%</strong><br><small>Favorited Companies Avg Response Rate</small></h3>
+          </div>
+        </div>
+
+
+
+
+    <div bgcolor="#ffffff" style="padding: 10px 20px 20px 20px; color: #555555; font-family: Arial, sans-serif; font-size:15px; line-height: 24px; border-bottom: 1px solid #f6f6f6;">
+      The above statistics are calculated across all of your colleagues at Windsor View.
+    </div>
+
+</div>
+
+<div class="block">
+  <!-- Contacts Title -->
+  <div class="block-title">
+    <div class="block-options">
+      <h2>Response Statistics</h2>
+
+        <div class="block-options pull-right range-container response">
+          <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="oneWeek">1 Week</a>
+          <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default active" data-range="oneMonth">1 Month</a>
+          <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="threeMonth">3 Months</a>
+          <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-range="sixMonth">6 Months</a>
+        </div>
+
+    </div>
+  </div>
+
+
+      <div class="table-responsive">
+
+          <table id="response-table" class="table table-striped table-vcenter table-condensed table-hover">
+            <thead>
+              <tr>
+                <th style="text-align:center;" rowspan="2"></th>
+                <th style="text-align:center;" rowspan="2">Total Emails</th>
+                <th style="text-align:center; border-left:  solid 2px #ccc;" colspan="2">Avg Response Time</th>
+                <th style="text-align:center; border-left:  solid 2px #ccc;" colspan="2">Avg Response Rate</th>
+              </tr>
+              <tr>
+                <th style="text-align:center; color:#DE5B5C;"><strong>Windsor View</strong></th>
+                <th style="text-align:center; color:#5092C0;"><strong>Favorited Company</strong></th>
+                <th style="text-align:center; color:#DE5B5C; border-left:  solid 2px #ccc;"><strong>Windsor View</strong></th>
+                <th style="text-align:center; color:#5092C0;"><strong>Favorited Company</strong></th>
+              </tr>
+            </thead>
+
+            <tbody id="response-graph-container"><tr>
+  <td style="text-align:left;">Bull City Venture Partners</td>
+
+    <td style="text-align:center;">8</td>
+
+    <td style="text-align:center;">a day</td>
+
+    <td style="text-align:center;">2 days</td>
+
+    <td style="text-align:center;">83%</td>
+
+    <td style="text-align:center;">71%</td>
+
+</tr><tr>
+  <td style="text-align:left;">Bench</td>
+
+    <td style="text-align:center;">16</td>
+
+    <td style="text-align:center;">5 days</td>
+
+    <td style="text-align:center;">20 hours</td>
+
+    <td style="text-align:center;">67%</td>
+
+    <td style="text-align:center;">100%</td>
+
+</tr><tr>
+  <td style="text-align:left;">Benhatten.com</td>
+
+    <td style="text-align:center;">26</td>
+
+    <td style="text-align:center;">5 hours</td>
+
+    <td style="text-align:center;">21 minutes</td>
+
+    <td style="text-align:center;">47%</td>
+
+    <td style="text-align:center;">89%</td>
+
+</tr><tr>
+  <td style="text-align:left;">Bgrdc.com</td>
+
+    <td style="text-align:center;">0</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+</tr><tr>
+  <td style="text-align:left;">Bgrpr.com</td>
+
+    <td style="text-align:center;">0</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+</tr><tr>
+  <td style="text-align:left;">COMPTEL</td>
+
+    <td style="text-align:center;">0</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+</tr><tr>
+  <td style="text-align:left;">Davidvitter.com</td>
+
+    <td style="text-align:center;">8</td>
+
+    <td style="text-align:center;">an hour</td>
+
+    <td style="text-align:center;">2 minutes</td>
+
+    <td style="text-align:center;">100%</td>
+
+    <td style="text-align:center;">33%</td>
+
+</tr><tr>
+  <td style="text-align:left;">Dun &amp; Bradstreet</td>
+
+    <td style="text-align:center;">0</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+    <td style="text-align:center;">n/a</td>
+
+</tr><tr>
+  <td style="text-align:left;">EasyPaint</td>
+
+    <td style="text-align:center;">14</td>
+
+    <td style="text-align:center;">37 minutes</td>
+
+    <td style="text-align:center;">a day</td>
+
+    <td style="text-align:center;">100%</td>
+
+    <td style="text-align:center;">88%</td>
+
+</tr></tbody>
+          </table>
+
+      </div>
+
+
+</div></div></div>
+      <div role="tabpanel" class="tab-pane active" id="company-tab"><div id="companies-list"><!-- <div role="tabpanel" class="tab-pane active" id="tab1"> -->
+<div class="block">
+  <!-- Contacts Title -->
+  <div class="block-title">
+    <div class="block-options text-center">
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="#">#</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="a">A</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="b">B</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="c">C</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="d">D</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="e">E</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="f">F</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="g">G</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="h">H</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="i">I</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="j">J</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="k">K</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="l">L</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="m">M</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="n">N</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="o">O</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="p">P</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="q">Q</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="r">R</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="s">S</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="t">T</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="v">V</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="u">U</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="w">W</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="x">X</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="y">Y</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default" data-filter="z">Z</a>
+      <a href="javascript:void(0)" class="fltr btn btn-sm btn-alt btn-default rm" style="background-color:#ff6666;display:none;color:white;" data-filter="remove">Remove</a>
+    </div>
+  </div>
+  <!-- END Contacts Title -->
+  <div class="table-responsive">
+    <div id="list-general-table_wrapper" class="dataTables_wrapper no-footer"><div class="row"><div class="col-sm-6 col-xs-5"><div class="dataTables_length" id="list-general-table_length"><label><select name="list-general-table_length" aria-controls="list-general-table" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div><div class="fresh-date">Data Last Updated: Feb 17th, 2015</div></div><div class="col-sm-6 col-xs-7"><div id="list-general-table_filter" class="dataTables_filter"><label><div class="input-group"><input type="search" class="form-control input-sm" placeholder="Search favorites here..." aria-controls="list-general-table"><span class="input-group-addon"><i class="fa fa-search"></i></span></div></label></div><div class="sort-clear btn btn-sm btn-alt btn-default">Reset Default Sort</div></div></div><table id="list-general-table" class="table table-striped table-vcenter favorite-dt dataTable no-footer" role="grid" aria-describedby="list-general-table_info" style="width: 100%;">
+      <thead>
+        <tr role="row"><th class="sorting" tabindex="0" aria-controls="list-general-table" rowspan="1" colspan="1" aria-label="Favorite : activate to sort column ascending">Favorite <span><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Companies/Organizations that you have 'favorited' for quick access"></i></span></th><th class="sorting" tabindex="0" aria-controls="list-general-table" rowspan="1" colspan="1" aria-label="Company : activate to sort column ascending">Company <span><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="This is either the company/organization name we were able to look up or the domain"></i></span></th><th class="sorting" tabindex="0" aria-controls="list-general-table" rowspan="1" colspan="1" aria-label="Most Recent
+
+
+          : activate to sort column ascending">Most Recent
+            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="This is the date of the last contact with the company/organization, either sent or received"><i class="fa fa-question-circle"></i>
+            </span>
+          </th><th class="sorting" tabindex="0" aria-controls="list-general-table" rowspan="1" colspan="1" aria-label="Emails Sent : activate to sort column ascending">Emails Sent <span><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="This is the total number of emails sent to the company/organization"></i></span></th><th class="sorting" tabindex="0" aria-controls="list-general-table" rowspan="1" colspan="1" aria-label="Emails Received: activate to sort column ascending">Emails Received<span><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="This is the total number of emails received from the  company/organization"></i></span></th><th class="sorting" tabindex="0" aria-controls="list-general-table" rowspan="1" colspan="1" aria-label="Number of Connections: activate to sort column ascending">Number of Connections<span><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="This is the number of different people at the organization that count as 'connections'"></i></span></th><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Flag">Flag<span><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="This will notify the Windsor View team that there is something wrong with this company/organization"></i></span></th></tr>
+      </thead>
+      <tbody id="favorite-list-container"><tr role="row" class="odd">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="Benhatten.com" data-sort="Benhatten.com" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-screengrabs.s3.amazonaws.com/production/benhatten.com/thumbnail_75x75.jpg" src="https://moonshot-screengrabs.s3.amazonaws.com/production/benhatten.com/thumbnail_75x75.jpg">
+    </div>
+    <div class="company-name">Benhatten.com</div></td>
+
+  <td data-filter="1424201291">Last Tue</td>
+
+  <td>20</td>
+  <td>50</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">1</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="even">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="Davidvitter.com" data-sort="Davidvitter.com" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-screengrabs.s3.amazonaws.com/production/davidvitter.com/thumbnail_75x75.jpg" src="https://moonshot-screengrabs.s3.amazonaws.com/production/davidvitter.com/thumbnail_75x75.jpg">
+    </div>
+    <div class="company-name">Davidvitter.com</div></td>
+
+  <td data-filter="1424111535">Last Mon</td>
+
+  <td>39</td>
+  <td>18</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">2</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="odd">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="EasyPaint" data-sort="EasyPaint" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-logos.s3.amazonaws.com/production/easypaint.com/logo_75x75.jpg" src="https://moonshot-logos.s3.amazonaws.com/production/easypaint.com/logo_75x75.jpg">
+    </div>
+    <div class="company-name">EasyPaint</div></td>
+
+  <td data-filter="1423767747">Feb 12</td>
+
+  <td>15</td>
+  <td>13</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">1</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="even">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="Bench" data-sort="Bench" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-logos.s3.amazonaws.com/production/bench.co/logo_75x75.jpg" src="https://moonshot-logos.s3.amazonaws.com/production/bench.co/logo_75x75.jpg">
+    </div>
+    <div class="company-name">Bench</div></td>
+
+  <td data-filter="1423238600">Feb 06</td>
+
+  <td>22</td>
+  <td>29</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">3</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="odd">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="Bull City Venture Partners" data-sort="Bull City Venture Partners" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-logos.s3.amazonaws.com/production/bcvp.com/logo_75x75.jpg" src="https://moonshot-logos.s3.amazonaws.com/production/bcvp.com/logo_75x75.jpg">
+    </div>
+    <div class="company-name">Bull City Venture Partners</div></td>
+
+  <td data-filter="1423091524">Feb 04</td>
+
+  <td>7</td>
+  <td>6</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">1</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="even">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="Bgrpr.com" data-sort="Bgrpr.com" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://www.windsorview.com/assets/img/logos/blist.com.jpeg" src="https://www.windsorview.com/assets/img/logos/blist.com.jpeg">
+    </div>
+    <div class="company-name">Bgrpr.com</div></td>
+
+  <td data-filter="1418763969">12/16/2014</td>
+
+  <td>5</td>
+  <td>2</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">2</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="odd">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="Dun &amp; Bradstreet" data-sort="Dun &amp; Bradstreet" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-logos.s3.amazonaws.com/production/dnb.com/logo_75x75.jpg" src="https://moonshot-logos.s3.amazonaws.com/production/dnb.com/logo_75x75.jpg">
+    </div>
+    <div class="company-name">Dun &amp; Bradstreet</div></td>
+
+  <td data-filter="1417535360">12/02/2014</td>
+
+  <td>2</td>
+  <td>8</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">2</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="even">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="COMPTEL" data-sort="COMPTEL" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-logos.s3.amazonaws.com/production/comptel.org/logo_75x75.jpg" src="https://moonshot-logos.s3.amazonaws.com/production/comptel.org/logo_75x75.jpg">
+    </div>
+    <div class="company-name">COMPTEL</div></td>
+
+  <td data-filter="1416007678">11/14/2014</td>
+
+  <td>10</td>
+  <td>5</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">1</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr><tr role="row" class="odd">
+  <td>
+    <div class="favorite">
+
+        <i class="fa fa-heart"><span style="display:none;">true</span></i>
+
+    </div>
+  </td>
+  <td data-search="Bgrdc.com" data-sort="Bgrdc.com" class="logo-name"><div class="img-container">
+      <img class="placeholder loading" data-path="https://moonshot-screengrabs.s3.amazonaws.com/production/bgrdc.com/thumbnail_75x75.jpg" src="https://moonshot-screengrabs.s3.amazonaws.com/production/bgrdc.com/thumbnail_75x75.jpg">
+    </div>
+    <div class="company-name">Bgrdc.com</div></td>
+
+  <td data-filter="1415634292">11/10/2014</td>
+
+  <td>5</td>
+  <td>4</td>
+  <td class="text-center"><a href="javascript:void(0)" class="label label-warning">2</a></td>
+  <td><i class="fa fa-times-circle"></i></td>
+</tr></tbody>
+    </table><div class="row"><div class="col-sm-5 hidden-xs"><div class="dataTables_info" id="list-general-table_info" role="status" aria-live="polite"><strong>1</strong>-<strong>9</strong> of <strong>9</strong></div></div><div class="col-sm-7 col-xs-12 clearfix"><div class="dataTables_paginate paging_bootstrap pagination" id="list-general-table_paginate"><ul class="pagination pagination-sm remove-margin"><li class="prev disabled"><a href="#">← </a></li><li class="active"><a href="#">1</a></li><li class="next disabled"><a href="#"> → </a></li></ul></div></div></div></div>
+  </div>
+  <!-- END Contacts Content -->
+</div>
+
+<!-- </div> --></div></div>
+    </div>
+  </div>
+</div></div></div>
+<footer class="clearfix"><div class="pull-left"><span id="year-copy">2015</span> © Windsor View Corporation
+</div></footer></div></div>
+    <div id="sidebar-region"><div id="sidebar">
+  <div class="sidebar-scroll">
+    <div class="sidebar-content">
+      <a href="#" class="sidebar-brand" id="dash_menu">
+        <div class="beta"><h6>Beta</h6></div>
+
+        <strong style="padding-left: 32px">Windsor </strong>View
+      </a>
+
+      <div class="sidebar-section sidebar-user clearfix">
+        <div class="sidebar-user-avatar">
+            <a href="#">
+                <img src="https://lh5.googleusercontent.com/-p_-PbfaTYik/AAAAAAAAAAI/AAAAAAAAABM/31-zbJIT-5s/photo.jpg" alt="avatar">
+            </a>
+        </div>
+        <div class="sidebar-user-name">Josh Miramant</div>
+        <div class="sidebar-user-links">
+            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Profile"><i class="gi gi-user"></i></a>
+            <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Logout"><i class="gi gi-exit"></i></a>
+        </div>
+      </div>
+
+ <ul class="sidebar-nav">
+        <li class="sidebar-header">
+          <span class="sidebar-header-title">Menu</span>
+        </li>
+        <li>
+          <a href="./dashboard_home.html" id="dashboard" title="Click to view dashboard" class=""><i class="fa fa-bar-chart-o sidebar-nav-icon"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="./companies.html" id="companies" title="Click to view companies" class=""><i class="fa fa-suitcase sidebar-nav-icon"></i>Companies</a>
+          <ul id="favorited_companies">
+          <li><a href="javascript:void(0)" id="Favorites">Favorites</a></li></ul>
+        </li>
+        <li>
+          <a href="./colleagues.html" id="employees" title="Click to view employees" class=""><i class="fa fa-users sidebar-nav-icon"></i>Colleagues</a>
+        </li>
+        <li>
+          <a href="./my_connections.html" id="user" title="Click to manage connections" class=""><i class="fa fa-user sidebar-nav-icon"></i>My Connections</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+    <div id="modal-region"></div>
+  </div>
+<!-- livereload script -->
+<script type="text/javascript">document.write('<script src="http://'
+ + (location.host || 'localhost').split(':')[0]
+ + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+</script><script src="http://localhost:35729/livereload.js?snipver=1" type="text/javascript"></script>
+
+
+<div class="celery celery-test"><div class="celery-messages"><div class="celery-container"></div></div></div><div><iframe style="border: none; z-index: 999998; transform: translateZ(0px); position: fixed; bottom: 50px; min-width: 400px; right: 5px; height: 416px; width: 432px; visibility: hidden; left: -9999px; background: transparent;" id="ticketSubmissionForm" data-reactid=".0"></iframe></div><div><iframe style="border: none; z-index: 999998; transform: translateZ(0px); width: 114px; height: 48px; position: fixed; bottom: 10px; right: 20px; visibility: visible; background: transparent;" id="launcher" data-reactid=".2"></iframe></div>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/datatables.js"></script>
+<script src="js/rest.js"></script>
+</body></html>
